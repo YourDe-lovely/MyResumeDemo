@@ -15,6 +15,8 @@ public class BaseActivity extends AppCompatActivity  {
 
     // testflow2
 
+    //mast分支
+
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
