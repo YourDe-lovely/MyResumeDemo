@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/menu1"
+        android:orderInCategory="1"
+        android:title="身份信息"
+        android:icon="@mipmap/ic_launcher"/>
+
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="2"
+        android:title="联系方式"
+        android:icon="@mipmap/daily"/>
+
+    </group>
+
+    <item
+        android:orderInCategory="3"
+       android:title="其他">
+
+        <menu>
+
+            <item android:title="个人空间"
+                  android:id="@+id/menu_personal_space"/>
+            <item android:title="其他2"/>
+        </menu>
+
+    </item>
+
+</menu>

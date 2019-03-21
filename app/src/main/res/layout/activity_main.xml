@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:navigationIcon="@mipmap/narrow_back"
+                app:popupTheme="@style/toolbarMenuStyle"
+                app:subtitle="subtitlesubtitlesubtitle"
+                app:title="titletitletitletitletitle"
+                android:theme="@style/appBarStyle"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/toolbar_meun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fa_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/daily"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|right|end"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hello.resume.myresumedemo.view.TouchLatourView
+                android:id="@+id/touch_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_main"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_navigation"
+        app:menu="@menu/menu_main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+    <!--<android.support.v4.widget.DrawerLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.NavigationView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.design.widget.NavigationView>-->
+
+
+    <!--</android.support.v4.widget.DrawerLayout>-->
+
