@@ -12,6 +12,8 @@ import android.view.View;
 
 public class BaseActivity extends AppCompatActivity  {
 
+    //mast分支
+
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
